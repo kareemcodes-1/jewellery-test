@@ -52,7 +52,7 @@ function FAQ() {
 
       {/* Heading */}
       <div>
-        <h2 className="mt-[1rem] uppercase text-[2.2rem] md:text-[3rem] lg:text-[5rem] leading-[1.2] tracking-[-0.02em] text-[#000]">
+        <h2 className="mt-[1rem] uppercase text-[2.2rem] md:text-[3rem] lg:text-[5rem] leading-[1.2] tracking-[-0.02em] text-[#0A100D]">
           Frequently <br /> asked questions
         </h2>
       </div>

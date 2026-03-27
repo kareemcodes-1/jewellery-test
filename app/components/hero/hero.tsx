@@ -25,10 +25,10 @@ export default function Hero() {
         className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${active === 0 ? "opacity-100" : "opacity-0"} bg-[url('https://framerusercontent.com/images/FpJkmcO1nccrgnuOzf2HY1gd9kc.png')]`}
       />
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${active === 1 ? "opacity-100" : "opacity-0"} bg-[url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=80')]`}
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${active === 1 ? "opacity-100" : "opacity-0"} bg-[url('https://framerusercontent.com/images/aP67aArB7bl4xAny84m7tnlNg.png')]`}
       />
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${active === 2 ? "opacity-100" : "opacity-0"} bg-[url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1800&q=80')]`}
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${active === 2 ? "opacity-100" : "opacity-0"} bg-[url('https://framerusercontent.com/images/4z5AootUChh2XDNZW0NMzXO2LI.png')]`}
       />
 
       {/* Bottom gradient for text legibility */}
@@ -68,26 +68,26 @@ export default function Hero() {
 
         {/* BOTTOM LEFT — CTA */}
         <div className="absolute bottom-10 w-full">
-           <div className="flex items-end justify-between px-[2rem]">
+          <div className="flex items-end justify-between px-[2rem]">
             <div>
-               <h1
-            // href="#"
-            className="block text-white uppercase tracking-[0.03em] text-[6rem] leading-none no-underline"
-          >
-             JEWELLERY MADE TO
-          </h1>
-          <h1 className="block text-white/40 uppercase tracking-[0.03em] text-[6rem] leading-none">
-            BE REMEMBERED
-          </h1>
+              <h1
+                // href="#"
+                className="block text-white uppercase tracking-[0.03em] text-[6rem] leading-none no-underline"
+              >
+                JEWELLERY MADE TO
+              </h1>
+              <h1 className="block text-white uppercase tracking-[0.03em] text-[6rem] leading-none">
+                BE REMEMBERED
+              </h1>
             </div>
 
-                         <Link
-  href="/" 
-  className="bg-white py-3 px-8 flex items-start text-black/70 uppercase text-[.8rem] tracking-[0.15em] transition-all duration-300 cursor-pointer hover:bg-[#8c2923] hover:text-white"
->
-  Shop now
-</Link>
-           </div>
+            <Link
+              href="/"
+              className="bg-white py-[.9rem] px-8 rounded-[.3rem] flex items-start text-black/70 uppercase text-[.9rem] tracking-[0.15em] transition-all duration-300 cursor-pointer hover:bg-[#8c2923] hover:text-white"
+            >
+              Shop now
+            </Link>
+          </div>
         </div>
 
 

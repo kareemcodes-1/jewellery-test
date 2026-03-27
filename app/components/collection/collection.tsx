@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 
 const collections = [
   {
@@ -31,18 +33,16 @@ export default function Collection() {
 
           {/* Bottom-left label */}
           <div className="absolute bottom-6 left-6 z-10">
-            <div className="flex items-start w-full flex-col">
-                <h2 className=" text-white text-[3rem] leading-tight mb-1">
-              {col.title}
-            </h2>
-            <a
-              href="#"
-              className="uppercase text-white text-[.8rem] !font-[400] tracking-[0.04em] underline underline-offset-2 decoration-white/60 hover:decoration-white transition-all"
-            >
-              Shop Now
-            </a>
-            </div>
-          </div>
+  <h2 className="text-white text-[3rem] leading-tight mb-3">
+    {col.title}
+  </h2>
+  <Link
+    href="/"
+    className="bg-white hover:bg-[#8c2923] hover:text-white transition-[.4] py-[.9rem] px-8 inline-flex items-center rounded-[.3rem] text-black/70 uppercase text-[.9rem] tracking-[0.15em] font-normal transition-all duration-300 cursor-pointer"
+  >
+    Shop now
+  </Link>
+</div>
 
         </div>
       ))}

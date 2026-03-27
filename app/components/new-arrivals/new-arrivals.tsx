@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
+import Link from "next/link";
 
 interface Product {
   name: string;
@@ -51,19 +52,27 @@ export default function NewArrivals() {
   return (
     <section className="w-full font-sans py-[5rem] min-h-screen px-[2rem]">
       {/* Banner */}
-     {/* <div className="flex items-center gap-[2rem] w-full mb-[2rem]">
+      {/* <div className="flex items-center gap-[2rem] w-full mb-[2rem]">
         <button className="text-[4rem] primary">RINGS <sup className="text-[1rem]">(3)</sup></button>
         <button className="text-[2rem] primary">NECKLACE <sup className="text-[1rem]">(3)</sup></button>
         <button className="text-[2rem] primary">BRACELETS <sup className="text-[1rem]">(3)</sup></button>
      </div> */}
 
-     <div className="flex items-center gap-[2rem] w-full mb-[2rem]">
-        <h1 className="text-[5rem] primary uppercase">FEATURED PRODUCTS</h1>
-     </div>
-    
+      <div className="flex items-center justify-between gap-[2rem] w-full mb-[2rem]">
+        <h1 className="text-[5rem] primary uppercase text-[#0A100D]">FEATURED PRODUCTS</h1>
+
+
+        <Link
+          href="/"
+          className="bg-[#111] py-[.9rem] px-8 rounded-[.3rem] flex items-start text-white uppercase text-[.9rem] tracking-[0.15em] transition-all duration-300 cursor-pointer hover:bg-[#8c2923] hover:text-white"
+        >
+          View all
+        </Link>
+      </div>
+
 
       <div
-      className="grid grid-cols-3 gap-[1rem]"
+        className="grid grid-cols-3 gap-[2rem]"
       >
         {products.map((product) => (
           <article key={product.name}>
@@ -76,10 +85,10 @@ export default function NewArrivals() {
                 />
               </div>
               <div className="flex items-center justify-between mt-[.5rem]">
-                <h2 className="text-black text-[1.5rem] !font-[400] tracking-[-0.01em]">
+                <h2 className="text-black text-[2rem] !font-[400] tracking-[-0.01em]">
                   {product.name}
                 </h2>
-                <p className="text-black/80 text-[1rem] font-medium">{product.price}</p>
+                <p className="text-black/80 text-[1.2rem] font-medium">{product.price}</p>
               </div>
             </div>
           </article>
