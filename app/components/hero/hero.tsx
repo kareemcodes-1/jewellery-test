@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const slides = [
@@ -66,8 +67,10 @@ export default function Hero() {
         </h3>
 
         {/* BOTTOM LEFT — CTA */}
-        <div className="absolute bottom-10 left-6">
-          <h1
+        <div className="absolute bottom-10 w-full">
+           <div className="flex items-end justify-between px-[2rem]">
+            <div>
+               <h1
             // href="#"
             className="block text-white uppercase tracking-[0.03em] text-[6rem] leading-none no-underline"
           >
@@ -76,7 +79,17 @@ export default function Hero() {
           <h1 className="block text-white/40 uppercase tracking-[0.03em] text-[6rem] leading-none">
             BE REMEMBERED
           </h1>
+            </div>
+
+                         <Link
+  href="/" 
+  className="bg-white py-3 px-8 flex items-start text-black/70 uppercase text-[.8rem] tracking-[0.15em] transition-all duration-300 cursor-pointer hover:bg-[#8c2923] hover:text-white"
+>
+  Shop now
+</Link>
+           </div>
         </div>
+
 
       </div>
     </section>

@@ -26,11 +26,10 @@ export default function Navbar() {
             <Marquee
               speed={40}
               gradient={false}
+              autoFill
               className="text-[9px] tracking-[0.15em] uppercase text-[#1c1a14] opacity-70 font-normal"
             >
-              <span className="mx-8">Subscribe to our newsletter</span>
-              <span className="mx-8">Subscribe to our newsletter</span>
-              <span className="mx-8">Subscribe to our newsletter</span>
+              <span className="mx-8">Free shipping</span>
             </Marquee>
           </div>
 

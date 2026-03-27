@@ -142,6 +142,7 @@ h2,
 h3,
 h4 {
     font-family: 'Instrument Serif';
+    line-height: 120%;
 }
 
 .primary{

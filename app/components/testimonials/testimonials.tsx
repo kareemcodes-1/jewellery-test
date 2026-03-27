@@ -31,7 +31,11 @@ function TestimonialCard({ name, text }: {name: string; text:string;}) {
 
 export default function Testimonials() {
   return (
-    <section className="w-full bg-[#f0ede8] h-screen py-20 flex flex-col gap-4 overflow-hidden">
+    <section className="w-full bg-[#f0ede8] min-h-screen py-20 flex flex-col gap-4 overflow-hidden">
+
+      <div className="flex items-center gap-[2rem] w-full mb-[2rem] px-[2rem]">
+        <h1 className="text-[5rem] primary uppercase">WORDS FROM OUR CLIENTS</h1>
+     </div>
 
       {/* Top row — scrolls left */}
       <Marquee speed={40} direction="left" pauseOnHover gradient={false}>
