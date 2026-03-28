@@ -16,32 +16,32 @@ interface Product {
 const products: Product[] = [
   {
     name: "Gold Serpent Ring",
-    price: "290 USD",
+    price: "4,000 NGN",
     image: "https://framerusercontent.com/images/RDVoBPvLRxLA5jWdCEAY7hTmrIU.png",
   },
   {
     name: "Pearl Drop Earrings",
-    price: "210 USD",
+    price: "5,000 NGN",
     image: "https://framerusercontent.com/images/nJBNJTyIiYb9fGvt5uIOYLPNps.png?width=1024&height=1024",
   },
   {
     name: "Diamond Tennis Bracelet",
-    price: "590 USD",
+    price: "5,000 NGN",
     image: "https://framerusercontent.com/images/mHTzZd3l6JVmLwekYtLKjZM2o.png?width=1024&height=1024",
   },
   {
     name: "Gold Chain Necklace",
-    price: "850 USD",
+    price: "2,500 NGN",
     image: "https://framerusercontent.com/images/m50hPs9gi5YAiakHEZ77qjQbB0.png?width=1024&height=1024",
   },
   {
     name: "Signet Ring",
-    price: "150 USD",
+    price: "3,000 NGN",
     image: "https://framerusercontent.com/images/74e4L8FqOUOhoGVkVcWrspe7EiU.png?width=1024&height=1024",
   },
   {
     name: "Hoop Earrings",
-    price: "180 USD",
+    price: "4,000 NGN",
     image: "https://framerusercontent.com/images/iH43LQuI7TiMG7iI5hMWCm6cEQ.png?width=840&height=840",
   },
 ];
@@ -85,10 +85,10 @@ export default function NewArrivals() {
                 />
               </div>
               <div className="flex items-center justify-between mt-[.5rem]">
-                <h2 className="text-black text-[2rem] !font-[400] tracking-[-0.01em]">
+                <h2 className="text-black text-[1.7rem] !font-[400] tracking-[-0.01em]">
                   {product.name}
                 </h2>
-                <p className="text-black/80 text-[1.2rem] font-medium">{product.price}</p>
+                <p className="text-black/80 text-[1.2rem] font-[600]">{product.price}</p>
               </div>
             </div>
           </article>
